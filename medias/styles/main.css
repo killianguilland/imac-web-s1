@@ -9,31 +9,6 @@
     src: url('../fonts/lexend_variable[wght].ttf') format('truetype');
 }
 
-/* Fallback pour les navigateurs qui ne supportent pas les fonts variables */
-@font-face {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: medium;
-    font-display: swap;
-    src: url('../fonts/lexend_medium.woff2') format('woff2'); 
-}
-
-@font-face {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: bold;
-    font-display: swap;
-    src: url('../fonts/lexend_bold.woff2') format('woff2'); 
-}
-
-@font-face {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: light;
-    font-display: swap;
-    src: url('../fonts/lexend_light.woff2') format('woff2'); 
-}
-
 
 /** GLOBAL **/
 * {
