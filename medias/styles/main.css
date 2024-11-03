@@ -1,0 +1,187 @@
+/** FONTS **/
+
+/* Font variable */
+@font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('../fonts/lexend_variable[wght].ttf') format('truetype');
+}
+
+/* Fallback pour les navigateurs qui ne supportent pas les fonts variables */
+@font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: medium;
+    font-display: swap;
+    src: url('../fonts/lexend_medium.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url('../fonts/lexend_bold.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: light;
+    font-display: swap;
+    src: url('../fonts/lexend_light.woff2') format('woff2'); 
+}
+
+
+/** GLOBAL **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+
+    --uge-blue: #2F2A85;
+    --uge-dark-blue: #1c184e;
+    --uge-white: #ececf9;
+    --uge-light-grey: #b3b3b3;
+    --uge-focus: #4d45db;
+
+    font-family: "Lexend", sans-serif;
+    color: var(--uge-dark-blue);
+}
+
+a {
+    color: var(--uge-dark-blue);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    padding: 32px 16px;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+/** HEADER **/
+header {
+    background-color: var(--uge-blue);
+    padding: 26px 36px 26px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: var(--uge-white);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 61px;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+
+/** FOOTER **/
+footer {
+    background-color: var(--uge-blue);
+    color: var(--uge-white);
+    padding: 32px 16px;
+}
+
+.footer-content {
+    display: flex;
+    color: var(--uge-white);
+    gap: 16px;
+}
+
+footer a {
+    color: var(--uge-white);
+    font-weight: 300;
+}
+
+footer ul {
+    padding-left: 16px;
+}
+
+footer small {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 17.5px;
+    text-align: center;
+    margin-top: 32px;
+    display: block;
+}
+
+footer .disclaimer {
+    font-weight: 400;
+    max-width: 116px;
+    width: 100%;
+}
+
+footer nav {
+    max-width: 248px;
+    width: 100%;
+}
+
+
+/** RESPONSIVE **/
+@media screen and (min-width: 768px) {
+
+    /* Global */
+    :root {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 64px 0;
+    }
+
+    /* Header */
+    header {
+        padding-left: 382px;
+        padding-right: 382px;
+    }
+
+    header ul {
+        gap: 197px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 64px;
+    }
+
+    footer .footer-content {
+        max-width: 1344px;
+        margin: auto;
+    }
+
+    footer .disclaimer {
+        max-width: 528px;
+    }
+
+    footer nav {
+        max-width: 800px;
+    }
+
+    footer small {
+        margin-top: 64px;
+    }
+}

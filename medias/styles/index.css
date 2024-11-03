@@ -1,0 +1,156 @@
+/** INDEX **/
+/* Style spécifique à la page index.html */
+
+
+/* Title section */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+/* Images section */
+
+.images-section {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0;
+    gap: 32px;
+}
+
+.images-section img {
+    border-radius: 5px;
+}
+
+.images-section > div {
+    width: 100%;
+    max-width: 285px;
+    text-align: center;
+}
+
+.images-section p {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #2C0439;
+    margin-top: 8px;
+}
+
+#esiee-logo {
+    border: 8px solid #153E5D;
+    padding: 31px 34px 28px 34px;
+}
+
+/* CTA section */
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.625rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+a.button {
+    display: block;
+    border: 3px solid #2F2A85;
+    padding: 16px;
+    font-family: Lexend;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--uge-blue);
+    border-radius: 5px;
+    margin: auto;
+    text-decoration: none;
+    background-color: var(--uge-white);
+    max-width: 222px;
+}
+
+a.button:hover {
+    background-color: var(--uge-blue);
+    color: var(--uge-white);
+}
+
+
+/** RESPONSIVE **/
+@media screen and (min-width: 768px) {
+
+    main {
+        max-width: 1344px;
+        margin: auto;
+    }
+    
+    /* Title section */
+    .title-section {
+        max-width: 1072px;
+    }
+    
+    h1 {
+        font-size: 64px;
+        margin-bottom: 64px;
+    }
+    
+    p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    
+    /* Images section */
+    .images-section {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 64px 0;
+    }
+    
+    #esiee-logo {
+        padding: 50px 83px 50px 83px;
+    }
+
+    .images-section > div {
+        max-width: 384px;
+    }
+
+    .images-section img {
+        width: 100%;
+        max-height: 217px;
+        object-fit: cover;
+    }
+
+    .images-section p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    /* CTA section */
+    .cta-section {
+        max-width: 384px;
+        margin: auto;
+        gap: 64px;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    a.button {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        max-width: 284px;
+    }
+    
+}

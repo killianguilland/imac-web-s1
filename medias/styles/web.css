@@ -1,0 +1,67 @@
+/** WEB **/
+/* Style spécifique à la page web.html */
+
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Technology section */
+
+.technology-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.technology-section img {
+    width: 116px;
+}
+
+.technology-section p {
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.technology-section p:last-child {
+    text-align: right;
+    color: var(--uge-dark-blue);
+}
+
+.technology-section em {
+    text-decoration: underline dotted 2px;
+    font-style: normal;
+}
+
+.technology-section strong {
+    color: var(--uge-focus);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        text-align: center;
+        font-size: 56px;
+    }
+
+    /* Technology section */
+    .technology-section {
+        max-width: 800px;
+        margin: auto;
+        margin-top: 64px;
+    }
+
+    .technology-section p {
+        font-size: 36px;
+    }
+    
+    .technology-section img {
+        width: 256px;
+    }
+
+}
