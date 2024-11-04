@@ -35,7 +35,7 @@ h1 {
     text-align: center;
     font-size: 1.125rem;
     font-weight: 600;
-    color: #2C0439;
+    color: var(--uge-dark-blue);
     margin-top: 8px;
 }
 
@@ -63,7 +63,6 @@ a.button {
     display: block;
     border: 3px solid #2F2A85;
     padding: 16px;
-    font-family: Lexend;
     font-size: 1.125rem;
     font-weight: 700;
     text-align: center;
